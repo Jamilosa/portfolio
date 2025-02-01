@@ -1,13 +1,13 @@
 @font-face {
   font-family: "UbuntuFont";
-  src: url(../src/font/UbuntuMono-R.ttf) format("truetype");
+  src: url(./src/font/UbuntuMono-R.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url(../src/font/Montserrat/Montserrat-VariableFont_wght.ttf)
+  src: url(./src/font/Montserrat/Montserrat-VariableFont_wght.ttf)
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "Lato";
-  src: url(../src/font/Lato/Lato-Regular.ttf) format("truetype");
+  src: url(./src/font/Lato/Lato-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
