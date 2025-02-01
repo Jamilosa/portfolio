@@ -1,0 +1,417 @@
+@font-face {
+  font-family: "UbuntuFont";
+  src: url(../src/font/UbuntuMono-R.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../src/font/Montserrat/Montserrat-VariableFont_wght.ttf)
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(../src/font/Lato/Lato-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  --text-color: #718096; /* rgb(140, 157, 186) */
+  --background-color: #1a202c; /* rgb(26, 32, 44) */
+  --tag-bg-color: #2b6cb0; /* rgb(43, 108, 176) */
+  --tag-text-color: #f7fafc; /* rgb(247, 250, 252) */
+  --tag-border-color: #718096; /* rgb(140, 157, 186) */
+  --accent-color: #68d391; /* rgb(104, 211, 145) */
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  scrollbar-color: var(--text-color) var(--background-color);
+  font-family: Montserrat, sans-serif;
+  height: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.circle {
+  position: absolute;
+  width: 200vh;
+  height: 200vh;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.03) 0%,
+    rgba(57, 255, 20, 0) 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+/* Left Panel */
+.left-panel {
+  width: 40%;
+  position: sticky;
+  padding: 5rem 2rem 7rem 10vh;
+  top: 0;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-panel .left-panel-top {
+  flex-grow: 1; /* Pushes left-panel-bottom to the bottom*/
+}
+
+.left-panel .left-panel-top .name {
+
+}
+.left-panel .left-panel-top .title {
+  padding: 10px 0 15px 2px;
+}
+.left-panel .left-panel-top .subtitle {
+  padding: 0 0 0 0px;
+}
+
+.left-panel .left-panel-bottom {
+  padding: 10px 0 10px 0;
+}
+
+.left-panel .left-panel-bottom .contact-container {
+}
+.left-panel .left-panel-bottom .contact-container a {
+  padding: 0 5px 0 0;
+  text-decoration: none;
+}
+.left-panel .left-panel-bottom .contact-container a img {
+  height: 25px;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 60%;
+  overflow-y: auto;
+  padding: 5rem 2rem 1rem 2rem;
+}
+
+.right-panel section {
+  min-height: auto;
+  margin: 0 0 2rem 0; /* Space between sections (Last section overwritten) */
+  display: flex;
+}
+
+.right-panel .section .section-container {
+}
+.right-panel .section .section-container .section-title {
+}
+.right-panel .section .section-container .section-subtitle {
+}
+.right-panel .section .section-container .section-content {
+}
+.right-panel .section .section-container .section-content .paragraph {
+  line-height: 1.3;
+}
+
+/* About Section */
+.right-panel #section1 .about-container {
+}
+.right-panel #section1 .about-container .about-title {
+}
+.right-panel #section1 .about-container .about-title p {
+}
+.right-panel #section1 .about-container .about-content {
+}
+.right-panel #section1 .about-container .about-content p {
+  margin-bottom: 0.8rem;
+}
+
+/* Knowledge Section */
+.right-panel #section2 .knowledge-container {
+}
+.right-panel #section2 .knowledge-container .knowledge-title {
+}
+.right-panel #section2 .knowledge-container .knowledge-title p {
+}
+
+.right-panel #section2 .knowledge-container .knowledge-content {
+}
+.right-panel
+  #section2
+  .knowledge-container
+  .knowledge-content
+  .section-subtitle {
+  margin: 0 0 5px 0;
+}
+.right-panel #section2 .knowledge-container .knowledge-category {
+  margin: 10px 0 20px 0px;
+}
+
+.knowledge-category .section-subtitle {
+}
+
+#section2 .project-tag .domain {
+}
+#section2 .project-tag .concept {
+}
+#section2 .project-tag .tool {
+}
+#section2 .project-tag .tag:hover {
+  /*color: rgba(124, 231, 165, 1); */
+  font-weight: bold;
+}
+
+/* Completion Certificates */
+#section3 .certificate-container {
+}
+
+#section3 .certificate-container .certificate-title {
+}
+#section3 .certificate-container .certificate-title p {
+}
+
+#section3 .certificate-container .certificate-content {
+}
+#section3 .certificate-container .certificate-content {
+}
+
+#section3 .certificate-container .certificate-content p {
+}
+
+#section3 .certificate-content-date {
+  margin: 10px 0 0 0;
+}
+#section3 .certificate-name .courses ul {
+}
+#section3 .certificate-name .courses li {
+  list-style: square;
+  margin: 5px 0px 5px 2rem;
+}
+
+li:hover {
+  /* color: rgba(104, 211, 145, 1); */ 
+  font-weight: bold;
+}
+
+
+
+/* Projects */
+#section4 . {
+}
+#section4 .project-container {
+}
+#section4 .project-container .section-title {
+}
+#section4 .project-container .project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between projects*/
+}
+
+#section4 .project-container .project-content .project-item {
+}
+
+#section4 .project-container .project-content .project-item:hover {
+  background-color: rgba(252, 252, 255, 0.05);
+}
+
+#section4 .project-item .project-thumbnail {
+  flex-shrink: 0;
+}
+#section4 .project-item .project-thumbnail img {
+  width: 150px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#section4 .project-item:hover .project-thumbnail img {
+  border: 2px solid rgba(140, 157, 186, 0.2);
+}
+
+#section4 .project-item:hover .project-title {
+  /*color: rgba(104, 211, 145, 1);*/
+  font-weight: bold;
+
+}
+
+#section4 .project-item:hover .tag {
+  /*color: rgba(124, 231, 165, 1);*/
+  font-weight: bold;
+}
+
+#section4 .project-item {
+  display: flex; /* Maintain side-by-side layout */
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px; /* Project outer space*/
+  gap: 10px; /* Adds spacing between image and text */
+}
+
+#section4 .project-item .project-details {
+  display: flex;
+  flex-direction: column; /* Stack title, description, and tags */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Keep items aligned to the top */
+  flex-grow: 1; /* Allow the text area to take up remaining space */
+}
+#section4 .project-item .project-details .project-title {
+}
+#section4 .project-item .project-details .project-title p {
+}
+#section4 .project-item .project-details .project-description {
+}
+#section4 .project-item .project-details .project-description p {
+  margin: 5px 0px 5px 0px;
+}
+
+/* Used on #Section2 and #Section4 */
+.project-tag {
+  display: flex;
+  flex-wrap: wrap; /* Allow tags to wrap if needed */
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.project-tag .tag {
+  border: 1px solid var(--tag-border-color);
+  color: var(--text-color);
+  background-color: transparent;  
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  display: inline-block; /* Ensure it respects max-width */
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Break long words if needed */
+  text-align: center; /* Center align the text inside the tag */
+}
+
+
+
+/* xFont size */
+.left-panel .name {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #94A3B8;
+}
+
+.left-panel .title {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.left-panel .subtitle {
+  font-size: 1rem;
+}
+
+.section-title {
+  /* About - Knowledge Area - Completion Cert - Projects */
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 1rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+}
+
+/* For Medium Screens */
+@media screen and (max-width: 860px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .circle {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel {
+    width: 100%;
+    padding: 1rem 1rem 0rem 1rem;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  .left-panel-bottom {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .left-panel-top {
+    flex-grow: 0;
+  }
+  .right-panel {
+    width: 100%;
+    overflow: visible;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .right-panel section {
+    height: auto;
+  }
+
+  .section-title {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--background-color); /* Match the theme */
+    padding: 0;
+    margin: 0;
+    border-bottom: 0px solid#333;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-container {
+    min-height: 100%;
+  }
+  .project-item {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align everything to the left */
+  }
+
+  .left-panel {
+  }
+
+  .right-panel {
+  }
+
+  .right-panel section {
+  }
+}
